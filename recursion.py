@@ -1,9 +1,9 @@
-def addition(num):
+def factorial(num):
     if num:
         # call same function by reducing number by 1
-        return num + addition(num - 1)
+        return num  * factorial(num - 1)
     else:
-        return 0
+        return 1
 
-res = addition(10)
+res = factorial(5)
 print(res)
