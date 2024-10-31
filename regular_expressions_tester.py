@@ -14,7 +14,7 @@ pp = len(re.findall(r"\b\w*pp\w*\b", data))
 
 exclamation_mark = re.sub(r"!", "#", data)
 
-starts_and_ends = re.findall(r"\b[Tt]\w*(?<!e)\b", data, re.IGNORECASE)
+starts_and_ends = re.findall(r"\bt\w*(?<!e)\b", data, re.IGNORECASE)
 
 if shrieked:
     print("shrieked is present in the file")
